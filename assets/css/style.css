@@ -17,6 +17,7 @@
 
 /* Variables End */
 
+/**** Site Styling ****/ 
 *{
     margin: 0;
     padding: 0;
@@ -33,6 +34,12 @@ body{
     background: var(--bg-color);
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+
 h2, #intro {
     color: var(--secondary-color);
 }
@@ -41,12 +48,33 @@ section{
     margin-bottom: 40px;
 }
 
-.container{
-    max-width: 1200px;
-    margin: auto;
-    width: 90%;
+.section-title{
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
+.btn {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px gray;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: var(--highlight-color);
+    color: black;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
+    box-shadow: 1px 1px 1px gray;
+}
+
+/**** Nav Bar Styling****/ 
 nav{
     position: sticky;
     top: 0px;
@@ -81,6 +109,8 @@ nav{
 .nav-link:active {
     transform: scale(0.98);
 }
+
+/**** Hero Styling ****/ 
 
 #title{
     background-position: 50px 50px;
@@ -125,31 +155,7 @@ nav{
     width: 70%;
 }
 
-.section-title{
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.skill-tiles {
-    display: flex;
-    flex-flow: row wrap;    
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px 30px;
-    width: 70%;
-    margin: auto;
-    padding: 20px;
-}
-
-.skill {
-    box-shadow: 0px 0px 10px lightgray;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
-.skill-blurb{
-    margin-top: 6px;
-}
+/**** Projects Styling ****/ 
 
 .project {
     box-shadow: 0px 0px 10px lightgray;
@@ -193,26 +199,30 @@ nav{
     padding: 0% 3%;
 }
 
-#footer{
-    background: var(--primary-color);
-    text-align: center;
-    padding: 30px 0px 50px 0px;
+/**** Skills Styling ****/ 
+
+.skill-tiles {
+    display: flex;
+    flex-flow: row wrap;    
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px 30px;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
 }
 
-.footer-social{
+.skill {
+    box-shadow: 0px 0px 10px lightgray;
     border-radius: 10px;
-    color: var(--secondary-color);
-    padding: 6px;
+    padding: 10px;
+    text-align: center;
+}
+.skill-blurb{
+    margin-top: 6px;
 }
 
-.footer-social:hover{
-    color: var(--highlight-color);
-    background-color: var(--secondary-color);
-}
-
-.copyright {
-    margin-top: 20px;
-}
+/**** Contact Styling ****/ 
 
 .contact-form-container .contact-form {
     box-shadow: 0px 0px 10px lightgray;
@@ -244,23 +254,60 @@ nav{
     width: 100px;
 }
 
-.btn {
+/**** Footer Styling ****/ 
+
+#footer{
+    background: var(--primary-color);
+    text-align: center;
+    padding: 30px 0px 50px 0px;
+}
+
+.footer-social{
+    border-radius: 10px;
+    color: var(--secondary-color);
+    padding: 6px;
+}
+
+.footer-social:hover{
+    color: var(--highlight-color);
     background-color: var(--secondary-color);
-    border: none;
-    border-radius: 6px;
-    box-shadow: 2px 2px 2px gray;
-    color: white;
-    font-family: var(--font-family);
-    font-size: 15px;
 }
 
-.btn:hover {
-    background-color: var(--highlight-color);
-    color: black;
-    cursor: pointer;
+.copyright {
+    margin-top: 20px;
 }
 
-.btn:active {
-    transform: scale(0.98);
-    box-shadow: 1px 1px 1px gray;
+/******** RESPONSIVE DESIGN **********/
+
+/* Medium devices (landscape tablets, 992px and below) */
+@media only screen and (max-width: 880px) {
+    body {
+        background-color: red;
+    }
+
+    .skill-tiles{
+        gap: 20px 20px;
+    }
+
+    .skill-img{
+        width: 70px;
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: yellow;
+    }
+
+    .skill-tiles{
+        gap: 20px 10px;
+        width: 100%;
+    }
+    
+    .skill-img{
+        width: 40px;
+        height: auto;
+    }
 }
