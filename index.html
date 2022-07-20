@@ -8,9 +8,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jacob Swartzentruber | Web Developer</title>
+        <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
         <meta name="description" content="A web developer portfolio site for Jacob Swartzentruber">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
@@ -26,19 +30,22 @@
                 <li class="nav-link" id="nav-about">ABOUT</li>
                 <li class="nav-link" id="nav-contact">CONTACT</li>
             </ul>
+            <button id="burger-menu"><i class="fa-solid fa-bars fa-xl"></i></button>
         </nav>
 
         <div class="container">
             <!-- Hero Section -->
             <section id="title">
-                <div class="title-box">
-                    <div id="intro">
-                        Hello,<br />I'm Jacob<br />Swartzentruber
-                    </div>
-                </div>
-                <div class="title-box">
-                    <div id="summary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                <h2 id="intro">
+                    Hello,<br />I'm Jacob<br />Swartzentruber
+                </h2>
+                <div id="summary">
+                    A self-taught Javascript developer interested in exploring, implementing and learning more about web development solutions across the full-stack. Can be found, more often than not, moving a large cat who has jumped on the desk looking for unending amounts of love.
+                    <div class="summary-socials">
+                        <a href="https://github.com/jacobswartzentruber"><i class="social fa-brands fa-github fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/jacob-swartzentruber-a3a31343/"><i class="social fa-brands fa-linkedin fa-2x"></i></a>
+                        <a href="https://codepen.io/jsswart"><i class="social fa-brands fa-codepen fa-2x"></i></a>
+                        <a href = "mailto: jsswart@gmail.com"><i class="social fa-solid fa-envelope fa-2x"></i></a>
                     </div>
                 </div>
             </section>
@@ -47,39 +54,69 @@
             <section id="projects">
                 <h2 class="section-title">Projects</h2>
                 <div class="project">
+                  <div class="project-tile">
+                      <img src="/assets/images/express-apps.png" alt="Express Apps Screenshot">
+                      <a href="https://sudoku-solver-project-fcc.jacobswartzentr.repl.co/" class="btn project-btn-top">Sudoku Solver</a>
+                      <a href="https://library-project-fcc.jacobswartzentr.repl.co/" class="btn project-btn-bottom">Personal Library</a>
+                  </div>
+                  <div class="project-summary">
+                      <h3>Express Apps</h3>
+                      <p>
+                        Express, Node.js and MongoDB allow the developer to program across the full stack using only one language: Javascript.
+                      </p>
+                      <p>
+                        Sudoku Solver is an Express/Node.js application that can solve Sudoku problems and validate number placement. The application incorporates unit and functional tests to assure functionality through Chai and Mocha.
+                      </p>
+                      <p>
+                        A small Express/Node.js application called Personal Library uses MongoDB to store and catalogue already-read books and comments. It utilizes API endpoint requests as well as front-end form submission to query the database and make changes.
+                      </p>
+                  </div>
+              </div>
+                <div class="project">
                     <div class="project-tile">
-                        <button class="btn btn-live">Live</button>
-                        <button class="btn btn-source">Source</button>
+                        <img src="/assets/images/react-apps.png" alt="React Apps Screenshot">
+                        <a href="https://codepen.io/jsswart/pen/abLJymL" class="btn project-btn-top">Pomodoro Clock</a>
+                        <a href="https://codepen.io/jsswart/pen/poWbQRN" class="btn project-btn-bottom">Drum Machine</a>
                     </div>
                     <div class="project-summary">
-                        <h3>Project 1</h3>
+                        <h3>React Apps</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Two interactive React apps highlighting client-side engagement through audio and responsive UI.
+                        </p>
+                        <p>
+                            Pomodoro Clock is an aide useful for applying the Pomodoro technique, a time management method for productive pursuits. The app is comprised of an alternating session timer and break timer including adjustable periods and audio clues upon timeout.
+                        </p>
+                        <p>
+                            The second app, Drum Machine, combines click and keyboard events to trigger individual drum beats. Not as productive as Pomodoro timers but much more fun. Try combining different sequences to make a little beat!
                         </p>
                     </div>
                 </div>
                 <div class="project">
+                    <div class="project-tile">
+                        <img src="/assets/images/d3-maps.png" alt="D3 Graphs Screenshot">
+                        <a href="https://codepen.io/jsswart/pen/BawvwBY" class="btn project-btn-top">Heat Map</a>
+                        <a href="https://codepen.io/jsswart/pen/VwMRVqx" class="btn project-btn-bottom">Choropleth Map</a>
+                    </div>
                     <div class="project-summary">
-                        <h3>Project 2</h3>
+                        <h3>D3 Graphs</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            The D3 library is a Javascript library for manipulating objects based on data. This is especially useful for generating beautiful SVG graphs and maps.
+                        </p>
+                        <p>
+                            I have created two SVG maps using data gathered from APIs: a heat map showing land-surface base temperature fluctuations over time as well as a choropleth map illustrating educational attainment by county in the United States.
                         </p>
                     </div>
-                    <div class="project-tile">
-                        <button class=" btn btn-live">Live</button>
-                        <button class="btn btn-source">Source</button>
-                    </div>
-                    
                 </div>
                 <div class="project">
                     <div class="project-tile">
-                        <button class="btn btn-live">Live</button>
-                        <button class="btn btn-source">Source</button>
+                        <img src="/assets/images/coin-collector.png" alt="Coin Collector Screenshot">
+                        <a href="https://codepen.io/jsswart/pen/wvpowye" class="btn project-btn-top">Codepen</a>
+                        <a href="https://github.com/jacobswartzentruber/coin_collector" class="btn project-btn-bottom">Github</a>
                     </div>
                     <div class="project-summary">
-                        <h3>Project 3</h3>
+                        <h3>Coin Collector</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Coin Collector is an older sidescrolling platformer browser game programmed in Javascript and jQuery. Run through the forest and collect as many coins as you can! Inspiration for this game stemmed from a desire to merge my artistic pursuits with my burgeoning appreciation for client-side interactivity.
                         </p>
                     </div>
                 </div>
@@ -131,16 +168,51 @@
             <!-- About section -->
             <section id="about">
                 <h2 class="section-title">About</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <div class="about-content">
+                    <div class="about-paragraph">
+                       <div class="about-img">
+                            <img src="/assets/images/profile_picture.jpg" alt="Profile Picture">
+                        </div>
+                        <p>
+                            I am Jacob Swartzentruber, a self-taught Javascript developer interested in exploring, implementing and learning more about web development solutions across the full-stack.
+                        </p> 
+                    </div>
+                    <div class="about-paragraph">
+                        <div class="about-img">
+                            <img src="/assets/images/world-generator-square.png" alt="Procedural Terrain Generation">
+                            <div class="about-caption">
+                                Procedural Terrain Generation
+                            </div>
+                        </div>
+                        <p>
+                            From high school through college, my personal projects evolved from creating simple 2D ball-bouncing simulations in C++ to more complex procedural generated landscapes and browser-based games in Java. Eventually, I began porting my games and simulations into Javascript for use in the browser which spurred me to explore web applications. When I discovered Javascript could be used across the full-stack, I immediately knew this is what I want to do professionally - creating interactive experiences for others that can be appreciated in tangible ways.
+                        </p>
+
+                    </div>
+                    <div class="about-paragraph">
+                        <div class="about-img">
+                            <img src="/assets/images/minis.png" alt="Profile Picture">
+                            <div class="about-caption">
+                               3d Printed Miniatures
+                            </div>
+                        </div>
+                        <p>
+                            What keeps me curious and constantly learning is getting hands-on and being able to see something come alive at the end of a hard day's work. Whether I am creating portfolios and web applications professionally, designing my next 3d printing project or creating Dungeons and Dragons campaigns to be shared with friends in my free time, I most enjoy collaborating with others to bring life to a previously non-existant product. If I can share these experiences with other people, it makes the end result ten times more fulfilling.
+                        </p>
+                    </div>
+                    <div class="about-paragraph">
+                        <p>
+                            If you are looking for a curious web developer to join your team, want to talk about the nerdy aspects of 3D printing or simply want to say hello, send an email my way. I would love to hear from you!
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <!-- Contact section -->
             <section id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact-form-container">
-                    <form class="contact-form" action="INSERT FORMSPREE ACTION HERE" method="POST">
+                    <form class="contact-form" action="https://formspree.io/f/xzboarrz" method="POST">
                         <div class="form-control">
                             <label for="name">Name</label>
                             <input
@@ -193,10 +265,10 @@
         <!-- Footer section -->
         <footer id="footer">
             <div class="footer-socials">
-                <a href="https://github.com/jacobswartzentruber"><i class="footer-social fa-brands fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/jacob-swartzentruber-a3a31343/"><i class="footer-social fa-brands fa-linkedin fa-2x"></i></a>
-                <a href="https://codepen.io/jsswart"><i class="footer-social fa-brands fa-codepen fa-2x"></i></a>
-                <a href = "mailto: jsswart@gmail.com"><i class="footer-social fa-solid fa-envelope fa-2x"></i></a>
+                <a href="https://github.com/jacobswartzentruber"><i class="social fa-brands fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/jacob-swartzentruber-a3a31343/"><i class="social fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://codepen.io/jsswart"><i class="social fa-brands fa-codepen fa-2x"></i></a>
+                <a href = "mailto: jsswart@gmail.com"><i class="social fa-solid fa-envelope fa-2x"></i></a>
             </div>
             <div class="copyright">Jacob Swartzentruber &middot; 2022</div>
         </footer>
